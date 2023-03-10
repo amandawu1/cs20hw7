@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <head>
         <title>JSON Song List</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 </head>
 <body>
         <script>
@@ -100,8 +101,38 @@
                 ]
                 document.write(JSON.stringify(song))
         </script>
-        <hr>
-        <h2>Filter By Genre</h2>
-        
+
+        <script>
+                function chooseItem()
+                {
+                        var t= "";
+                        t += "<option>" + "Alternative/Indie" + "</option>";
+                        t += "<option>" + "Indie pop" + "</option>";
+                        t += "<option>" + "Folk-pop" + "</option>";
+                        t += "<option>" + "Pop" + "</option>";
+                        t += "<option>" + "R&B" + "</option>";
+                        t += "<option>" + "Soul" + "</option>";
+                        t += "<option>" + "Hip-Hop" + "</option>";
+                        t += "<option>" + "Dream Pop" + "</option>";
+                        t += "<option>" + "Holiday" + "</option>";
+                        t += "<option>" + "Contemporary R&B" + "</option>";
+                        t += "<option>" + "Indonesian Hip Hop" + "</option>";
+                        t += "<option>" + "UK R&B" + "</option>";
+                        t += "<option>" + "Afroswing" + "</option>";
+                        t += "</select>";
+                        return t;
+                }
+
+                $(document).ready(function(){
+			$.ajax({
+				url: "json2.html",
+				dataType: "html",
+				success: function(data){
+					console.log(data)
+				}
+			});
+		});
+        </script>
+
 </body>
 </html>
