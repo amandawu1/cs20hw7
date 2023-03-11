@@ -1,0 +1,60 @@
+h2 {
+        font-size: 20px;
+        font-weight: bold;
+        color: #155a12;
+        margin-left: 10%;
+        padding: 5px;
+        text-align: left;
+}
+
+h3 {
+        font-size: 24px;
+        font-weight: bold;
+        color: #155a12;
+        margin-left: 10%;
+        padding: 5px;
+        text-align: center;
+}
+
+.form {
+        text-align: center;
+}
+
+.label {
+        font-size: 16px;
+        font-weight: bold;
+        color: #155a12;
+        margin-left: 10%;
+        padding: 5px;
+        text-align: left;
+}
+
+.header {
+        font-size: 18px;
+        font-weight: bold;
+        color: #5f955c;
+        margin-left: 12%;
+        padding: 5px;
+        text-align: left;
+}
+
+#song-artist {
+        font-size: 16px;
+        color: #0a3f0e;
+        padding: 2px;
+        text-align: left;
+}
+
+#song-genre {
+        font-size: 16px;
+        color: #0a3f0e;
+        padding: 2px;
+        text-align: left;
+}
+
+#song-year {
+        font-size: 16px;
+        color: #0a3f0e;
+        padding: 2px;
+        text-align: left;
+}
